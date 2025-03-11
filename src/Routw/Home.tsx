@@ -36,7 +36,7 @@ const Home: React.FC = () => {
           <a
             id="mail-link"
             onClick={openMailClient}
-            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-black transition cursor-pointer"
+            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition cursor-pointer"
           >
             <i className="bx bxl-gmail"></i>
           </a>
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             href="https://www.linkedin.com/in/Swanra-Sai-Sankar-000797191/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:border-blue-500 hover:bg-blue-500 hover:text-black transition"
+            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:border-blue-500 hover:bg-blue-500 hover:text-white transition"
           >
             <i className="bx bxl-linkedin"></i>
           </a>
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             href="https://github.com/Swarna7414?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:border-blue-500 hover:bg-blue-500 hover:text-black transition"
+            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:border-blue-500 hover:bg-blue-500 hover:text-white transition"
           >
             <i className="bx bxl-github"></i>
           </a>
