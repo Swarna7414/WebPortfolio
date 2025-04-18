@@ -1,11 +1,11 @@
 import React from "react";
 
 const MyWorks:React.FC=()=>{
-    return(
-        <div>
-            <h1>This is my works</h1>
-            <p>This is my works also</p>
-        </div>
-    );
+  return(
+    <div>
+      <h1>THis is the Heading</h1>
+      <h2>THis is also heading</h2>
+    </div>
+  );
 }
 export default MyWorks;

@@ -3,8 +3,8 @@ import Navebar from "./Navbar";
 import { Route, Routes } from "react-router-dom";
 import SandT from "./Routw/SandT"
 import EandE from "./Routw/EandE";
-import MyWorks from "./Routw/MyWorks";
 import Home from "./Routw/Home";
+import MyWorks from "./Routw/MyWorks";
 
 
 const App:React.FC=()=>{
