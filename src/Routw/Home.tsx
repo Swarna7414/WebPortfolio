@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     >
       {/* Mobile Profile Image (hidden on md and up) */}
       <div className="md:hidden flex justify-center mt-10">
-        <div className="mt-15 w-48 h-48 rounded-full border-4 border-blue-500 overflow-hidden">
+        <div className="mt-15 w-60 h-60 rounded-full shadow-lg shadow-blue-500/50 overflow-hidden">
           <img
             src={small}
             alt="Swarna Sai Sankar"
