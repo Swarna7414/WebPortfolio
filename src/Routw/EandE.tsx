@@ -3,6 +3,16 @@ import { FaRegCalendarCheck, FaComputer } from "react-icons/fa6";
 import { CgArrowRightO } from "react-icons/cg";
 import '../Styles/Styles.css';
 
+const TCS:Array<string> = ["Developed Spring Boot microservices and RESTful APIs with JPA/Hibernate and Spring JDBC, ensuring scalability and performance.",
+                "Instituted comprehensive unit and integration testing using JUnit and Mockito to maintain code quality and test coverage.",
+                "Configured Jenkins CI/CD pipelines with Docker integration for multiple branches, automating tests and code quality checks via SonarQube.",
+                "Tested REST APIs using SoapUI and Postman, validating responses for functionality, performance, and compliance with client requirements.",
+                "Managed release lifecycles using RLM and OpenShift, ensuring smooth and seamless deployments.",
+                "Migrated code from SVN to Bitbucket, cleaned POM files, removed deprecated versions, and performed security checks for scalability.",
+                "Migrated codebase from Java 8 to Java 17 using OpenRewrite, ensuring compatibility and leveraging new language features.",
+                "Created and maintained Confluence pages to document technical designs, workflows, and deployment processes."
+            ]
+
 const EandE: React.FC = () => {
   return (
     <section className="min-h-screen bg-black text-blue-100 px-4 md:px-18 py-10">
@@ -14,7 +24,7 @@ const EandE: React.FC = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Education Section */}
-        <div className="w-full md:w-[45rem] border-2 border-blue-300 rounded-2xl p-4 flex flex-col gap-4">
+        <div className="w-full md:w-[45rem] border-2 border-white rounded-2xl p-4 flex flex-col gap-4">
           {/* Master's */}
           <div className="flex flex-col border-2 rounded-2xl py-4 px-4 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 transition duration-300 group">
             <div className="flex flex-row text-md">
@@ -63,16 +73,7 @@ const EandE: React.FC = () => {
 
             {/* Points */}
             <div className="mt-3 h-[300px] md:h-[320px] overflow-y-auto pr-2 custom-scroll">
-              {[
-                "Developed Spring Boot microservices and RESTful APIs with JPA/Hibernate and Spring JDBC, ensuring scalability and performance.",
-                "Instituted comprehensive unit and integration testing using JUnit and Mockito to maintain code quality and test coverage.",
-                "Configured Jenkins CI/CD pipelines with Docker integration for multiple branches, automating tests and code quality checks via SonarQube.",
-                "Tested REST APIs using SoapUI and Postman, validating responses for functionality, performance, and compliance with client requirements.",
-                "Managed release lifecycles using RLM and OpenShift, ensuring smooth and seamless deployments.",
-                "Migrated code from SVN to Bitbucket, cleaned POM files, removed deprecated versions, and performed security checks for scalability.",
-                "Migrated codebase from Java 8 to Java 17 using OpenRewrite, ensuring compatibility and leveraging new language features.",
-                "Created and maintained Confluence pages to document technical designs, workflows, and deployment processes."
-              ].map((text, index) => (
+              {TCS.map((text, index) => (
                 <div key={index} className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
                   <CgArrowRightO className="text-2xl mr-1.5 group-hover:text-white mt-1" />
                   <h1>{text}</h1>
