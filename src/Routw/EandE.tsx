@@ -16,8 +16,8 @@ const TCS:Array<string> = ["Developed Spring Boot microservices and RESTful APIs
 const EandE: React.FC = () => {
   return (
     <section className="min-h-screen bg-black text-blue-100 px-4 md:px-18 py-10">
-      <div className="flex justify-center mt-10 mb-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-center">
+      <div className="flex justify-center mt-12 mb-15">
+        <h1 className="text-3xl md:text-5xl font-bold text-center mt-3.5">
           My Education & Professional Career
         </h1>
       </div>
