@@ -1,5 +1,7 @@
 import React from "react";
 import { FaRegCalendarCheck } from "react-icons/fa6";
+import { CgArrowRightO } from "react-icons/cg";
+import { FaComputer } from "react-icons/fa6";
 
 const EandE:React.FC=()=>{
   return(
@@ -9,6 +11,7 @@ const EandE:React.FC=()=>{
           My Education & Professional carrer
         </h1>
       </div>
+
       {/**Education Content */}
       <div className="flex flex-row items-center justify-between ">
         <div className="border-3 border-b-blue-100 rounded-2xl w-180 h-115 flex flex-col px-5 py-5 justify-between hover:border-blue-300 duration-300">
@@ -44,8 +47,27 @@ const EandE:React.FC=()=>{
 
         </div>
         {/** Experience content */}
-        <div className="bg-green-400 w-160 h-115">
 
+        <div className="border-3 w-160 h-115 rounded-2xl hover:border-blue-300 flex flex-col px-5 py-5">
+          <div className="flex flex-col">
+            <div>
+              <div className="flex flex-row text-md mb-2">
+                <FaRegCalendarCheck className="mt-1 mr-2"/>
+                <span>July 2022 - December 2024</span>
+              </div>
+              <h1 className="text-2xl font-bold flex flex-row group"><FaComputer className="mt-1.5 mr-1.5 group-hover:text-blue-400 duration-300"/>Backend Developer, Tata Consultancy Services</h1>
+              <div className="w-3/3 h-px bg-blue-300 mt-4 mx-auto"></div>
+            </div>
+
+
+            {/**Points*/}
+            <div>
+              <div className="mt-3">
+                <h1 className="flex flex-row text-lg"><CgArrowRightO className="mr-1 mt-1 text-xl"/>Developed microservices and Rest APIs using Spring Boot, ensuring 
+                scalability and reliability with JUnit and Mockito for testing</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
