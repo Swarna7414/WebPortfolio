@@ -13,7 +13,7 @@ const Technologies = [
 
 const SandT: React.FC = () => {
   return (
-    <section className="min-h-screen bg-black text-white py-10 px-4 md:px-10">
+    <section className="min-h-screen bg-black text-blue-100 py-10 px-4 md:px-10">
       <div className="flex justify-center mt-13">
         <h1 className="text-3xl md:text-5xl font-bold text-center">My Skills & Technologies</h1>
       </div>
