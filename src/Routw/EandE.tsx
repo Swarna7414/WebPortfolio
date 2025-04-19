@@ -17,7 +17,7 @@ const EandE: React.FC = () => {
   return (
     <section className="min-h-screen bg-black text-blue-100 px-4 md:px-18 py-10">
       <div className="flex justify-center mt-12 mb-15">
-        <h1 className="text-3xl md:text-5xl font-bold text-center mt-3.5">
+        <h1 className="text-3xl md:text-5xl font-bold text-center mt-3.5 hover:text-blue-300 duration-350 cursor-pointer">
           My Education & Professional Career
         </h1>
       </div>
