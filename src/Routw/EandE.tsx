@@ -62,9 +62,52 @@ const EandE:React.FC=()=>{
 
             {/**Points*/}
             <div>
-              <div className="mt-3">
-                <h1 className="flex flex-row text-lg"><CgArrowRightO className="mr-1 mt-1 text-xl"/>Developed microservices and Rest APIs using Spring Boot, ensuring 
-                scalability and reliability with JUnit and Mockito for testing</h1>
+              <div className="mt-3 text-lg">
+                <div className="flex flex-row">
+                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                  <h1>Developed Spring Boot microservices and RESTful APIs with JPA/Hibernate 
+                    and Spring JDBC, ensuring scalability and performance.
+                  </h1>
+                </div>
+
+                <div className="flex flex-row mt-2">
+                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                  <h1>Instituted comprehensive unit and integration testing using JUnit and Mockito to 
+                  maintain code quality and test coverage.
+                  </h1>
+                </div>
+
+
+                <div className="flex flex-row mt-2">
+                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                  <h1>Configured Jenkins CI/CD pipelines with Docker integration for multiple branches, 
+                    automating tests and code quality checks via SonarQube.
+                  </h1>
+                </div>
+
+
+                <div className="flex flex-row mt-2">
+                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                  <h1>Tested REST APIs using SoapUI and Postman, validating responses for functionality, 
+                    performance, and compliance with client requirements.
+                  </h1>
+                </div>
+
+
+                <div className="flex flex-row mt-2">
+                  <CgArrowRightO className="text-xl mr-1.5"/>
+                  <h1>Managed release lifecycles using RLM and OpenShift, ensuring smooth and seamless deployments 
+                  </h1>
+                </div>
+
+
+                <div className="flex flex-row mt-2">
+                  <CgArrowRightO className="text-xl mr-1.5"/>
+                  <h1>Migrated code from SVN to Bitbucket, cleaned POM files, removed deprecated versions, and 
+                  performed security checks for scalability.   
+                  </h1>
+                </div>
+
               </div>
             </div>
           </div>
