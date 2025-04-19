@@ -2,6 +2,7 @@ import React from "react";
 import { FaRegCalendarCheck } from "react-icons/fa6";
 import { CgArrowRightO } from "react-icons/cg";
 import { FaComputer } from "react-icons/fa6";
+import '../Styles/Styles.css'
 
 const EandE:React.FC=()=>{
   return(
@@ -48,7 +49,7 @@ const EandE:React.FC=()=>{
         </div>
         {/** Experience content */}
 
-        <div className="border-3 w-160 h-115 rounded-2xl hover:border-blue-300 flex flex-col px-5 py-5">
+        <div className="border-3 w-160 h-115 rounded-2xl hover:border-blue-300 flex flex-col px-5 py-5 cursor-default">
           <div className="flex flex-col">
             <div>
               <div className="flex flex-row text-md mb-2">
@@ -62,49 +63,64 @@ const EandE:React.FC=()=>{
 
             {/**Points*/}
             <div>
-              <div className="mt-3 text-lg">
-                <div className="flex flex-row">
-                  <CgArrowRightO className="text-3xl mr-1.5"/>
+              <div className="mt-3 h-[320px] overflow-y-auto pr-2 custom-scroll">
+                <div className="flex flex-row mb-1 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-3xl mr-1.5 group-hover:text-white"/>
                   <h1>Developed Spring Boot microservices and RESTful APIs with JPA/Hibernate 
                     and Spring JDBC, ensuring scalability and performance.
                   </h1>
                 </div>
 
-                <div className="flex flex-row mt-2">
-                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-3xl mr-1.5 group-hover:text-white"/>
                   <h1>Instituted comprehensive unit and integration testing using JUnit and Mockito to 
                   maintain code quality and test coverage.
                   </h1>
                 </div>
 
 
-                <div className="flex flex-row mt-2">
-                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-3xl mr-1.5 group-hover:text-white"/>
                   <h1>Configured Jenkins CI/CD pipelines with Docker integration for multiple branches, 
                     automating tests and code quality checks via SonarQube.
                   </h1>
                 </div>
 
 
-                <div className="flex flex-row mt-2">
-                  <CgArrowRightO className="text-3xl mr-1.5"/>
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-3xl mr-1.5 group-hover:text-white"/>
                   <h1>Tested REST APIs using SoapUI and Postman, validating responses for functionality, 
                     performance, and compliance with client requirements.
                   </h1>
                 </div>
 
 
-                <div className="flex flex-row mt-2">
-                  <CgArrowRightO className="text-xl mr-1.5"/>
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-xl mr-1.5 mt-1 group-hover:text-white"/>
                   <h1>Managed release lifecycles using RLM and OpenShift, ensuring smooth and seamless deployments 
                   </h1>
                 </div>
 
 
-                <div className="flex flex-row mt-2">
-                  <CgArrowRightO className="text-xl mr-1.5"/>
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-2xl mt-1 mr-1.5 group-hover:text-white"/>
                   <h1>Migrated code from SVN to Bitbucket, cleaned POM files, removed deprecated versions, and 
                   performed security checks for scalability.   
+                  </h1>
+                </div>
+
+
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-xl mr-1.5 group-hover:text-white"/>
+                  <h1>Migrated codebase from Java 8 to Java 17 using OpenRewrite, 
+                    ensuring compatibility and leveraging new language features.   
+                  </h1>
+                </div>
+
+                <div className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                  <CgArrowRightO className="text-xl mr-1.5 group-hover:text-white"/>
+                  <h1>Created and maintained Confluence pages to document 
+                    technical designs, workflows, and deployment processes.
                   </h1>
                 </div>
 
