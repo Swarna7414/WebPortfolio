@@ -24,7 +24,7 @@ const EandE: React.FC = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Education Section */}
-        <div className="w-full md:w-[45rem] border-2 border-white rounded-2xl p-4 flex flex-col gap-4">
+        <div className="w-full md:w-[45rem] border-2 border-white rounded-2xl p-4 flex flex-col gap-4 hover:border-blue-300">
           {/* Master's */}
           <div className="flex flex-col border-2 rounded-2xl py-4 px-4 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 transition duration-300 group">
             <div className="flex flex-row text-md">
