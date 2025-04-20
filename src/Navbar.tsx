@@ -10,11 +10,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-black text-white h-15 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 z-10">
-
-      <h1 className="text-2xl font-cursive ml-15 sm:ml-7 md:ml-8 lg:ml-10 xl:ml-12 scale-x-150 italic hover:text-blue-500 transition-all duration-250 ease-in-out cursor-pointer">
+    <div className="fixed top-0 left-0 right-0 bg-black text-white h-16 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 z-50">
+      <h1 className="text-2xl font-cursive italic hover:text-blue-500 transition-all duration-250 ease-in-out cursor-pointer
+        absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none md:ml-6 sm:ml-9 md:ml-12 lg:ml-12 xl:ml-12">
         Sai Sankar Swarna
       </h1>
+
 
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-3xl text-white focus:outline-none">
@@ -30,7 +31,7 @@ const Navbar: React.FC = () => {
       </ul>
 
       {isOpen && (
-        <ul className="absolute top-20 left-0 right-0 bg-black flex flex-col items-center gap-6 py-6 md:hidden transition duration-300 ease-in-out">
+        <ul className="absolute top-16 left-0 right-0 bg-black flex flex-col items-center gap-6 py-6 md:hidden transition duration-300 ease-in-out">
           <Link to="/home" onClick={toggleMenu}><li className="hover:text-blue-500">Home</li></Link>
           <Link to="/skillsandtechnology" onClick={toggleMenu}><li className="hover:text-blue-500">Skill & Technology</li></Link>
           <Link to="/educationandexperience" onClick={toggleMenu}><li className="hover:text-sky-500">Education & Experience</li></Link>
