@@ -98,20 +98,20 @@ const SandT: React.FC = () => {
         {/* Left Column: Languages and Frameworks */}
         <div className="flex-1 flex flex-col px-3 md:px-5 pt-2">
           <h1 className="font-semibold text-xl md:text-2xl ml-2 text-orange-100">Languages</h1>
-          <div className="mt-1.5 border border-orange-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:border-0 hover:shadow-orange-500/30 hover:border-orange-500">
+          <div className="mt-1.5 border border-orange-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:shadow-orange-500/30 hover:border-orange-500">
             {languages.map((item, index) => renderItem(item, index))}
           </div>
 
-          <h1 className="mt-4 font-semibold text-xl md:text-2xl ml-2">Frameworks</h1>
-          <div className="text-green-100 mt-1.5 border border-green-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:shadow-green-500/30 hover:border-0 hover:border-green-500">
+          <h1 className="mt-4 font-semibold text-xl md:text-2xl ml-2 text-green-100">Frameworks</h1>
+          <div className="text-green-100 mt-1.5 border-2 border-green-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:shadow-green-500/30 hover:border-green-500">
             {FrameWorks.map((item, index) => RenderFramework(item, index))}
           </div>
         </div>
 
         {/* Right Column: Tools */}
         <div className="flex-1 flex flex-col px-3 md:px-3 md:justify-center">
-          <h1 className="mt-4 md:mt-0 font-semibold text-xl md:text-2xl ml-2 md:ml-5">Tools</h1>
-          <div className="text-blue-200mt-1.5 border border-blue-300 w-full rounded-2xl py-1.5 px-4 md:px-7 ml-0 md:ml-5 shadow-lg hover:shadow-blue-500/30 hover:border-0">
+          <h1 className="mt-4 md:mt-0 font-semibold text-xl md:text-2xl ml-2 md:ml-5 text-blue-100">Tools</h1>
+          <div className="text-blue-200mt-1.5 border-2 border-blue-300 w-full rounded-2xl py-1.5 px-4 md:px-7 ml-0 md:ml-5 shadow-lg hover:shadow-blue-700/50 hover:border-blue-400">
             {Tools.map((item, index) => RenderTools(item, index))}
           </div>
         </div>
