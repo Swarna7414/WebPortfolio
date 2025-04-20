@@ -97,13 +97,13 @@ const SandT: React.FC = () => {
       <div className="flex flex-col md:flex-row gap-8 md:gap-16 py-6 md:py-8 px-4 md:px-16 max-w-7xl mx-auto">
         {/* Left Column: Languages and Frameworks */}
         <div className="flex-1 flex flex-col px-3 md:px-5 pt-2">
-          <h1 className="font-semibold text-xl md:text-2xl ml-2">Languages</h1>
+          <h1 className="font-semibold text-xl md:text-2xl ml-2 text-orange-100">Languages</h1>
           <div className="mt-1.5 border border-orange-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:border-0 hover:shadow-orange-500/30 hover:border-orange-500">
             {languages.map((item, index) => renderItem(item, index))}
           </div>
 
           <h1 className="mt-4 font-semibold text-xl md:text-2xl ml-2">Frameworks</h1>
-          <div className="mt-1.5 border border-green-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:shadow-green-500/30 hover:border-0 hover:border-green-500">
+          <div className="text-green-100 mt-1.5 border border-green-300 w-full rounded-2xl py-1.5 px-4 md:px-7 shadow-lg hover:shadow-green-500/30 hover:border-0 hover:border-green-500">
             {FrameWorks.map((item, index) => RenderFramework(item, index))}
           </div>
         </div>
@@ -111,7 +111,7 @@ const SandT: React.FC = () => {
         {/* Right Column: Tools */}
         <div className="flex-1 flex flex-col px-3 md:px-3 md:justify-center">
           <h1 className="mt-4 md:mt-0 font-semibold text-xl md:text-2xl ml-2 md:ml-5">Tools</h1>
-          <div className="mt-1.5 border border-blue-300 w-full rounded-2xl py-1.5 px-4 md:px-7 ml-0 md:ml-5 shadow-lg hover:shadow-blue-500/30 hover:border-0">
+          <div className="text-blue-200mt-1.5 border border-blue-300 w-full rounded-2xl py-1.5 px-4 md:px-7 ml-0 md:ml-5 shadow-lg hover:shadow-blue-500/30 hover:border-0">
             {Tools.map((item, index) => RenderTools(item, index))}
           </div>
         </div>
