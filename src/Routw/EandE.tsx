@@ -36,7 +36,7 @@ const EandE: React.FC = () => {
           </div>
 
           {/* Bachelor's */}
-          <div className="flex flex-col border-2 rounded-2xl py-4 px-4 hover:border-blue-700 hover:shadow-lg hover:shadow-blue-700/50 transition duration-300 group">
+          <div className="flex flex-col border-2 rounded-2xl py-4 px-4 hover:border-orange-700 hover:shadow-lg hover:shadow-orange-700/50 transition duration-300 group">
             <div className="flex flex-row text-md">
               <FaRegCalendarCheck className="text-lg mt-1 transition-colors duration-300 group-hover:text-blue-400" />
               <span className="px-1.5">2019 - 2022</span>
@@ -46,7 +46,7 @@ const EandE: React.FC = () => {
           </div>
 
           {/* Polytechnic */}
-          <div className="flex flex-col border-2 rounded-2xl py-4 px-4 hover:border-blue-900 hover:shadow-lg hover:shadow-blue-900/50 transition duration-300 group">
+          <div className="flex flex-col border-2 rounded-2xl py-4 px-4 hover:border-green-900 hover:shadow-lg hover:shadow-green-900/50 transition duration-300 group">
             <div className="flex flex-row text-md">
               <FaRegCalendarCheck className="text-lg mt-1 transition-colors duration-300 group-hover:text-blue-400" />
               <span className="px-1.5">2016 - 2019</span>
