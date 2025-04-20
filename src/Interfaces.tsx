@@ -19,7 +19,6 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssLine } from "react-icons/ri";
 
 
-
 interface ProgramingLanguages{
     language:string;
     defaulticon:React.ComponentType<{className?:string}>;

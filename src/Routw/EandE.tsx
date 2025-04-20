@@ -7,7 +7,7 @@ const TCS:Array<string> = ["Developed Spring Boot microservices and RESTful APIs
                 "Instituted comprehensive unit and integration testing using JUnit and Mockito to maintain code quality and test coverage.",
                 "Configured Jenkins CI/CD pipelines with Docker integration for multiple branches, automating tests and code quality checks via SonarQube.",
                 "Tested REST APIs using SoapUI and Postman, validating responses for functionality, performance, and compliance with client requirements.",
-                "Managed release lifecycles using RLM and OpenShift, ensuring smooth and seamless deployments.",
+                "Managed release lifecycles using RLM and OpenShift, ensuring smooth and seamless deployments across development, testing, and production environments.",
                 "Migrated code from SVN to Bitbucket, cleaned POM files, removed deprecated versions, and performed security checks for scalability.",
                 "Migrated codebase from Java 8 to Java 17 using OpenRewrite, ensuring compatibility and leveraging new language features.",
                 "Created and maintained Confluence pages to document technical designs, workflows, and deployment processes."
@@ -75,7 +75,7 @@ const EandE: React.FC = () => {
             <div className="mt-3 h-[300px] md:h-[320px] overflow-y-auto pr-2 custom-scroll">
               {TCS.map((text, index) => (
                 <div key={index} className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
-                  <CgArrowRightO className="text-2xl mr-1.5 group-hover:text-white mt-1" />
+                  <CgArrowRightO className="text-3xl mr-1.5 group-hover:text-white mt-1" />
                   <h1>{text}</h1>
                 </div>
               ))}
