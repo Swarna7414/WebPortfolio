@@ -2,6 +2,7 @@ import React from "react";
 import { PiDiamondDuotone } from "react-icons/pi";
 import { FaJava } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
+import { BiSquareRounded } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
 import { ImHtmlFive2 } from "react-icons/im";
 import { GrMysql } from "react-icons/gr";
@@ -97,22 +98,22 @@ export const Tools:ProgramingLanguages[]=[
 export const FrameWorks:ProgramingLanguages[]=[
     {
         language:"SpringBoot",
-        defaulticon:FaDiamond,
+        defaulticon:BiSquareRounded,
         hovericon:SiSpringboot
     },
     {
         language:"Junit & Mockito",
-        defaulticon:FaDiamond,
+        defaulticon:BiSquareRounded,
         hovericon:PiNumberCircleFiveFill
     },
     {
         language:"React (ts)",
-        defaulticon:FaDiamond,
+        defaulticon:BiSquareRounded,
         hovericon:FaReact
     },
     {
         language:"Tailwind CSS",
-        defaulticon:FaDiamond,
+        defaulticon:BiSquareRounded,
         hovericon:RiTailwindCssLine
     }
 ]
