@@ -57,7 +57,7 @@ const Myworks: React.FC = () => {
           {/**third Logo*/}
           <div>
           <div className="ml-15 relative w-[280px] h-[280px] rounded-2xl overflow-hidden group">
-            <img src={Todo} alt="BitCoin Trading Bot"
+            <img src={Todo} alt="ToDo WebApplication"
              className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
             <div className="absolute inset-0 bg-[rgba(14,13,13,0.3)] flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-3xl">
               <div className="flex flex-col">
