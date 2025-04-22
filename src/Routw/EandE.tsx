@@ -74,7 +74,7 @@ const EandE: React.FC = () => {
             {/* Points */}
             <div className="mt-3 h-[300px] md:h-[320px] overflow-y-auto pr-2 custom-scroll">
               {TCS.map((text, index) => (
-                <div key={index} className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 hover:translate-x-2 group">
+                <div key={index} className="flex flex-row mb-1 mt-2 hover:text-blue-300 transform transition duration-500 cursor-pointer hover:translate-x-2 group">
                   <CgArrowRightO className="text-3xl mr-1.5 group-hover:text-white mt-1" />
                   <h1>{text}</h1>
                 </div>
@@ -83,6 +83,7 @@ const EandE: React.FC = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
