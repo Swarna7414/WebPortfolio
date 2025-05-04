@@ -1,91 +1,117 @@
-import React from "react";
-import background from "../assets/BackSide.jpeg";
-import small from "../assets/smallscrenn.png";
-import "boxicons/css/boxicons.min.css";
+import React, { useState } from "react";
+import { BiLogoGmail } from "react-icons/bi";
+import { IoIosMailOpen } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { CgBitbucket } from "react-icons/cg";
+import { FaLinkedin } from "react-icons/fa";
+import BackGround from "../assets/BackGround.jpeg";
+import SecondSmall from "../assets/SecondSmall.jpg"
+
+import "../Styles/animation.css";
+import { Bitbucket, Github, LeetCode, LinkedIn, Mailto } from "../Interfaces";
 
 const Home: React.FC = () => {
-  const openMailClient = (): void => {
-    window.location.href = "mailto:swanrasaisankarnaidu369@gmail.com";
-  };
-
+  const [hovered, sethovered] = useState<boolean>(false);
   return (
-    <section
-      className="min-h-screen flex flex-col md:flex-row items-center justify-end px-4 md:px-9 bg-cover bg-center relative cursor-default"
-      style={{
-        backgroundImage: `url(${background})`,
-      }}
-      id="home"
-    >
-      {/* Mobile Profile Image (hidden on md and up) */}
-      <div className="md:hidden flex justify-center mt-10">
-        <div className="mt-15 w-60 h-60 rounded-full shadow-lg shadow-blue-500/50 overflow-hidden">
+    <section className="pb-1 py-5 pt-13">
+      <div className="flex flex-col sm:flex-row mt-3 gap-4 sm:gap-2">
+
+        
+        <div className="w-full sm:w-180 h-auto sm:h-168 flex justify-center">
+          
           <img
-            src={small}
-            alt="Swarna Sai Sankar"
-            className="w-full h-full object-cover"
+            src={SecondSmall}
+            alt="MobileProfile"
+            className="block sm:hidden w-70 h-70 mt-6 rounded-full hover:shadow-lg hover:shadow-blue-500 object-cover duration-300"
+          />
+
+          
+          <img
+            src={BackGround}
+            alt="BackGroundImage"
+            className="hidden sm:block w-full h-full"
           />
         </div>
-      </div>
 
-      {/* Text Content */}
-      <div className="max-w-2xl text-white mt-8 md:mt-0 md:mr-4 w-full md:w-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mt-6 md:mt-0">
-          Hello, This is{" "}
-          <span className="text-gray-300 hover:text-blue-500 transition-all duration-300 cursor-pointer">
-            Swarna Sai Sankar
-          </span>
-        </h1>
-        <p className="text-base sm:text-lg mt-4">
-          I am a skilled Spring Boot developer with expertise in Spring JDBC,
-          JPA, MVC, Security, and JMS, building secure, efficient, and scalable
-          applications. My DevOps knowledge includes Git, Jenkins, Docker,
-          supporting streamlined integration and deployment. I am proficient in
-          Python, with expertise in NumPy, Matplotlib, and PyTorch for machine
-          learning model development. Additionally, I have strong skills in
-          React and TypeScript, enabling the creation of dynamic, maintainable
-          front-end applications. This blend of backend, DevOps, Python, and
-          front-end expertise allows me to effectively contribute across the
-          entire application lifecycle.
-        </p>
-      </div>
+        {/* Text Section */}
+        <div className="w-full sm:w-200 h-auto sm:h-168">
+          <div className="text-center sm:text-left mt-6 sm:mt-10 sm:ml-12">
+            <h1 className="text-3xl sm:text-6xl font-bold group cursor-default">
+              Hello, This is <br />
+              <span className="cursor-pointer hover:text-blue-500 duration-650">
+                Sai Sankar Swarna
+              </span>{" "}
+              <span className="inline-block wave-on-hover cursor-grab">👋</span>
+            </h1>
+          </div>
 
-      {/* Social Icons */}
-      <div className="w-full md:w-auto flex justify-center md:absolute md:bottom-16 mt-8 md:mt-0 pb-8 md:pb-0">
-        <div className="flex space-x-4">
-          <a
-            onClick={openMailClient}
-            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition cursor-pointer"
-          >
-            <i className="bx bxl-gmail"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/Swanra-Sai-Sankar-000797191/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition"
-          >
-            <i className="bx bxl-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/Swarna7414?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full text-blue-300 hover:bg-blue-500 hover:border-blue-500 hover:text-white transition"
-          >
-            <i className="bx bxl-github"></i>
-          </a>
+          <div className="w-full sm:h-1/2 px-4 sm:pl-13 sm:pr-5 text-sm sm:text-base leading-relaxed text-justify mt-6 sm:mt-10 text-size hover:text-blue-100 sm:max-w-5xl sm:mx-auto cursor-default">
+            <p>
+              I'm a Software developer with a strong foundation in Java, TypeScript, and Python. I specialize in
+              building secure and scalable applications using the Spring Boot ecosystem, including Spring
+              JDBC, JPA, MVC, Security, and JMS. My DevOps toolkit includes Git, GitHub, Bitbucket, Jenkins,
+              Docker, and RLM, allowing me to streamline integration, automate deployments, and manage
+              workflows effectively. I'm also proficient in Python, leveraging libraries like NumPy, Matplotlib, Pandas,
+              and PyTorch for data analysis, visualization, and machine learning tasks. On the front end, I enjoy
+              crafting clean, responsive UIs using React with TypeScript and Tailwind CSS. With this blend of backend,
+              DevOps, data, and front-end skills, I'm able to contribute across the full application lifecycle with confidence
+              and adaptability.
+            </p>
+          </div>
+
+          {/* Icons */}
+          <div className="flex justify-center sm:items-end sm:justify-end mt-8 sm:mt-16">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-0 sm:flex-row items-center sm:justify-between px-4 sm:px-5 py-2 text-3xl sm:text-4xl w-full sm:w-80 h-auto">
+              <div
+                className="border rounded-full hover:border-blue-500"
+                onMouseEnter={() => sethovered(true)}
+                onMouseLeave={() => sethovered(false)}
+              >
+                {hovered ? (
+                  <IoIosMailOpen
+                    className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-200 hover:border-blue-500 cursor-pointer hover:bg-blue-500"
+                    onClick={Mailto}
+                  />
+                ) : (
+                  <BiLogoGmail
+                    className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-blue-400 rounded-full duration-200 hover:border-blue-500 cursor-pointer hover:bg-blue-500"
+                    onClick={Mailto}
+                  />
+                )}
+              </div>
+
+              <div className="border rounded-full hover:border-blue-500">
+                <FaGithub
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-blue-400 rounded-full duration-300 hover:border-blue-500 cursor-pointer hover:bg-blue-500 hover:text-white"
+                  onClick={Github}
+                />
+              </div>
+
+              <div className="border rounded-full hover:border-blue-500">
+                <SiLeetcode
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-blue-400 rounded-full duration-300 hover:border-blue-500 cursor-pointer hover:bg-blue-500 hover:text-white"
+                  onClick={LeetCode}
+                />
+              </div>
+
+              <div className="border rounded-full hover:border-blue-500">
+                <CgBitbucket
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-blue-400 rounded-full duration-300 hover:border-blue-500 cursor-pointer hover:bg-blue-500 hover:text-white"
+                  onClick={Bitbucket}
+                />
+              </div>
+
+              <div className="border rounded-full hover:border-blue-500">
+                <FaLinkedin
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-blue-400 rounded-full duration-300 hover:border-blue-500 cursor-pointer hover:bg-blue-500 hover:text-white"
+                  onClick={LinkedIn}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Mobile background override */}
-      <style>{`
-        @media (max-width: 767px) {
-          #home {
-            background-image: none !important;
-            background-color: #000;
-          }
-        }
-      `}</style>
     </section>
   );
 };

@@ -30,3 +30,6 @@
   height: 0 !important;
   width: 0 !important;
 }
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,22 +1,28 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+// tailwind.config.ts
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      animation: {
-        glow: 'glow 2s ease-in-out infinite',
-      },
       keyframes: {
-        glow: {
-          '0%, 100%': {
-            boxShadow: '0 0 15px 5px rgba(59,130,246,0.5)',
-          },
-          '50%': {
-            boxShadow: '0 0 25px 10px rgba(59,130,246,0.8)',
-          },
+        wave: {
+          '0%': { transform: 'rotate(0deg)' },
+          '15%': { transform: 'rotate(14deg)' },
+          '30%': { transform: 'rotate(-8deg)' },
+          '40%': { transform: 'rotate(14deg)' },
+          '50%': { transform: 'rotate(-4deg)' },
+          '60%': { transform: 'rotate(10deg)' },
+          '70%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(0deg)' },
         },
+      },
+      animation: {
+        wave: 'wave 1.5s ease-in-out',
       },
     },
   },
   plugins: [],
-}
+};
+
+export default config;

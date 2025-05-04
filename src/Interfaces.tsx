@@ -9,8 +9,8 @@ import { GrMysql } from "react-icons/gr";
 import { FaDiamond } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { FaBitbucket } from "react-icons/fa";
-import { FaJenkins } from "react-icons/fa";
-import { DiDocker } from "react-icons/di";
+import { LiaJenkins } from "react-icons/lia";
+import { FaDocker } from "react-icons/fa";
 import { GiRecycle } from "react-icons/gi";
 import { SiPostman } from "react-icons/si";
 import { SiSpringboot } from "react-icons/si";
@@ -75,12 +75,12 @@ export const Tools:ProgramingLanguages[]=[
     {
         language:"Jenkins",
         defaulticon: FaDiamond,
-        hovericon:FaJenkins
+        hovericon:LiaJenkins
     },
     {
         language:"Docker",
         defaulticon: FaDiamond,
-        hovericon:DiDocker
+        hovericon:FaDocker
     },
     {
         language:"RLM (Release LifeCyle Management)",
@@ -116,3 +116,23 @@ export const FrameWorks:ProgramingLanguages[]=[
         hovericon:RiTailwindCssLine
     }
 ]
+
+export const Mailto=()=>{
+    window.open("mailto:swarnasaisankarnaidu369@gmail.com")
+}
+
+export const Github=()=>{
+    window.open("https://github.com/Swarna7414", "_blank")
+}
+
+export const Bitbucket=()=>{
+    window.open("https://bitbucket.org/deployedprojects/workspace/overview/","_blank")
+}
+
+export const LinkedIn=()=>{
+    window.open("https://www.linkedin.com/in/swanra-sai-sankar-000797191","_blank")
+}
+
+export const LeetCode=()=>{
+    window.open("https://leetcode.com/u/Swarna7414/","_blank")
+}
