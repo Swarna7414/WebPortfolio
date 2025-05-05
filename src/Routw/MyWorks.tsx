@@ -10,11 +10,11 @@ const Myworks: React.FC = () => {
   const navigate = useNavigate();
 
   const BtcCode = () => {
-    window.open("");
+    window.open("https://github.com/Swarna7414/Agent_Swarna");
   };
 
   const BTCSite = () => {
-    window.open("");
+    window.open("https://agent-front-end.vercel.app/");
   };
 
   const WeatherCode = () => {
